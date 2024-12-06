@@ -11,8 +11,6 @@ public class Main {
             System.out.println("Digite o número " + index + ":");
             vetor[index] = scanner.nextInt();
         }
-        //scanner.close();
-
 
         int controle = 0;
         Scanner scanner2 = new Scanner(System.in);
@@ -25,10 +23,28 @@ public class Main {
             controle++;
         }
 
+        int controle2 = 0;
+        Scanner scanner3 = new Scanner(System.in);
+        int[] vetor3 = new int[5];
+
+        do {
+            System.out.println("Digite 5 números: ");
+            System.out.println("Digite o número " + controle2 + ":");
+            vetor3[controle2] = scanner3.nextInt();
+            controle2++;
+        }
+        while (controle2 < 5); {
+
+
+        }
+
+
         System.out.println("Vetor for: " + Arrays.toString(vetor));
         System.out.println("Vetor While: " + Arrays.toString(vetor2));
+        System.out.println("Vetor Do While: " + Arrays.toString(vetor3));
         scanner.close();
         scanner2.close();
+        scanner3.close();
     }
 
 }
